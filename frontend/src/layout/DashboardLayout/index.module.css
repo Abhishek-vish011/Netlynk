@@ -1,0 +1,327 @@
+.homeContainer{
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+.homeContainer > div:nth-child(odd){
+    flex: 0.2;
+}
+.homeContainer > div:nth-child(even){
+   flex: 0.8;
+}
+.homeContainer_leftBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-right: none; 
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  max-height: 88vh;
+}
+
+.pathWay{
+    background: rgb(209, 215, 216);
+    padding: 1rem 3rem;
+}
+.pathWay h3{
+  padding: 0.6rem 0;
+  border-bottom: 1px solid gray;
+  color: #020e20;
+}
+.sideBarOption {
+  display: flex;
+  align-items: center;
+  border-left: 4px solid rgb(4, 39, 53);
+  background: white;
+  font-size: 1.2rem;
+  gap: 1.3rem;
+  width: 100%;
+  min-width: 100px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  padding: 0.5rem 1.4rem;
+  border-radius: 12px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.sideBottom {
+  border-top: 2px solid gray;
+  position: absolute;
+  bottom: 2px;
+  padding: 1rem 6rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  background: #fff; /* optional, for clarity */
+  transition: background 0.2s ease;
+}
+
+.sideBottom:hover {
+  background: #f8f8f8; /* hover effect */
+}
+
+.sideBottom h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sideBottom svg {
+  width: 20px;
+  height: 20px;
+}
+.userCardProfile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  max-width: 400px;
+  flex-wrap: wrap; 
+  transition: all 0.3s ease;
+}
+
+.userCardProfile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* prevents image from shrinking */
+}
+
+.userInfo {
+  flex: 1; /* take remaining space */
+  min-width: 200px; /* ensures content doesn't collapse */
+}
+
+.userInfo h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 2px solid gray;
+}
+
+.userInfo .username {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.userInfo .bio {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #3f3f3f;
+}
+
+/* 📱 Small devices */
+@media (max-width: 1000px) {
+  .userCardProfile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .userCardProfile img {
+    margin-bottom: 0.5rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  .userInfo {
+    min-width: unset;
+  }
+
+  .userInfo h3 {
+    font-size: 1rem;
+  }
+
+  .userInfo .bio {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .userCardProfile {
+    max-width: 600px;
+  }
+
+  .userInfo h3 {
+    font-size: 1.4rem;
+  }
+
+  .userInfo .bio {
+    font-size: 1rem;
+  }
+}
+
+
+.sideBarOption:hover{
+    transform: scale(1.04);
+}
+.sideBarOption>svg{
+   height: 1.4em;
+   min-width: fit-content;
+}
+
+.follower{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.following{
+   padding: 0rem 2rem;
+   border: 1px solid gray;
+}
+.homeContainer_feedContainer {
+  padding-inline: 0.8rem;
+ background-color: rgb(235, 239, 240);
+  height: 88vh;         
+  overflow-y: auto;      
+  scrollbar-width: none; 
+  /* padding: 1rem; */
+}
+
+/* Chrome/Edge/Safari scrollbar styling */
+.homeContainer_feedContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+.homeContainer_extraContainer {
+  border-right: none;
+  border-radius: 16px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.homeContainer_extraContainer h3 {
+  color: #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f0f0;
+  text-align: left;
+}
+
+.peopleList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.extraContainer_profile {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #f0f0f0;
+}
+
+.extraContainer_profile:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profileImageWrapper {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.userProfile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profileInfo {
+  margin-left: 1rem;
+  flex: 1;
+}
+
+.userName {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.userHandle {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.mobileNavbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 6vh;
+    display: none;
+    padding: 2rem 0;
+    justify-content: space-around;
+    background: black;
+    align-items: center;  
+}
+.mobileNavbar svg {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.mobileNavbar svg:hover {
+  transform: scale(1.2) rotate(-5deg);
+  color: #60a5fa; /* soft blue (optional – use brand color here) */
+}
+
+
+@media only screen and (max-width: 900px) {
+  .sideBottom{
+    padding: 1rem, 2rem;
+  }
+    .homeContainer_extraContainer{
+        display: none;
+    }
+    .homeContainer{
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .homeContainer_leftBar{
+        display: none;
+    }
+    .mobileNavbar{
+        display: flex;
+    }
+
+    .homeContainer_feedContainer{
+        padding: 0.4rem;
+    }
+}

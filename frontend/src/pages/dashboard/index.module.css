@@ -1,0 +1,371 @@
+/* Existing styles */
+.scrollComponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createPostContainer{
+  display: flex;
+  height: 10svh;
+  width: 100%;
+  padding-inline: 0.8rem;
+  gap: 0.8rem;
+  position: relative;
+  align-items: center;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.singleCard {
+  border: none; 
+  border-radius: 20px;
+  margin-bottom: 0.2rem;
+  padding: 1.2rem;
+  background-color: white;
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.15),
+    -4px -4px 8px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.uploadButton {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  border-radius: 10px;
+  padding-inline: 1.2rem;
+  padding-block: 0.8rem;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: black; /* make sure stroke is visible */
+}
+
+.userProfile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.createPostContainer >textarea{
+    width: 100%;
+}
+.Fab{
+    background: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Fab > svg{
+    width: fit-content;
+    height: 40px;
+    color: white;
+}
+
+.teaxtareaContent{
+    width: 80%;
+    height: 55%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+.singleCard{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.multiMedia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  gap: 3rem;
+  padding-bottom: 0.8rem;
+  padding-left: 5rem;
+  margin-bottom: 0.2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.optionMedia {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between icon and text */
+  cursor: pointer;
+}
+
+.optionMedia p {
+  margin: 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.feedHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.2rem;
+  flex-wrap: wrap; 
+  background-color: white;
+  gap: 10px;
+}
+
+.feedHeader h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.feedButtons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Default buttons */
+.tabButtons {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: gray;
+  background-color: white;
+  border: 1px solid rgb(193, 193, 193);
+}
+
+.tabButton {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+}
+
+.tabButtons:hover,
+.tabButton:hover {
+  background: #e0e0e0;
+}
+
+.singleCard_profileContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1.2rem;
+    padding-right: 3.4rem;
+}
+
+.singleCard_profileContainer > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.singleCard_image{
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+}
+.singleCard_image>img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.optionContainer{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 0.6rem;
+    margin-top: 0.5rem;
+    border-top: 2px solid gray;
+}
+
+.singleOption_optionContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+.singleOption_optionContainer > svg{
+    height: 100%;
+    width: 10%;
+    min-width: 1rem;
+}
+.commentsContainer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(0, 0, 0, 0.7);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.allCommentsContainer{
+    height: 80vh;
+    max-width: 1120px;
+    min-width: 40vw;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+}
+
+.postCommentContainer{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.postCommentContainer>input{
+    flex: 0.9;
+    padding-inline: 1.5rem;
+    padding-block: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: rgb(229, 226, 226);
+    border-radius: 10px;
+}
+.postCommentContainer>input:focus{
+    border: 1px solid silver;
+}
+.postCommentContainer_commentBtn{
+    flex: 0.1;
+    width: fit-content;
+    padding: 1rem;
+    background: rgb(221, 89, 89);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* Loader Styles */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  border: 6px solid #ffffff1a;
+  border-top-color: rgb(0, 0, 0);
+  animation: spin 1s linear infinite;
+  position: relative;
+  isolation: isolate;
+}
+.spinner.glow::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: inherit;
+  opacity: .55;
+  animation: pulse 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+.text {
+  font-size: clamp(18px, 2.5vw, 22px);
+  letter-spacing: .06em;
+  display: flex;
+  align-items: center;
+  gap: .1em;
+  user-select: none;
+}
+
+.dots { display: inline-flex; margin-left: .15em; }
+.dots span {
+  width: .38em;
+  height: .38em;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .2;
+  margin-left: .18em;
+  animation: blink 1.2s infinite;
+}
+.dots span:nth-child(2) { animation-delay: .2s; }
+.dots span:nth-child(3) { animation-delay: .4s; }
+
+.progress {
+  width: min(320px, 80vw);
+  height: 6px;
+  background: #ffffff1a;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress > i {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(121, 194, 225, 0.8), transparent);
+  animation: load 1.6s ease-in-out infinite;
+}
+
+@keyframes spin { to { transform: rotate(1turn); } }
+@keyframes blink { 0%, 20% { opacity: .2; } 10% { opacity: 1; } }
+@keyframes load { 0% { transform: translateX(-100%); } 100% { transform: translateX(250%); } }
+@keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .75; } }
+
+@media screen and (max-width: 900px)  {
+    .allCommentsContainer{ width: 90%; }
+    .wrapper{ max-width: 100%; }
+    .singleCard{ padding: 0; }
+    .teaxtareaContent{  
+      padding-inline: 1rem;
+    padding-block: 0.5rem; 
+    height: 40px;
+  }
+    .createPostContainer{ gap: 0.5rem; height: 8svh; }
+    .userProfile{ width: 40px; height: 40px; }
+    .Fab svg{ height: 30px; }
+    .singleCard_profileContainer{ gap: 0.4rem; padding: 1rem; }
+    .singleCard_profileContainer > img { width: 45px; height: 45px; }
+    .singleCard_image{ width: 100%; padding-top: 0.6rem; }
+    .teaxtareaContent{ font-size: 0.8rem; }
+}
