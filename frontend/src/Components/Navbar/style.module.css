@@ -57,7 +57,7 @@
   bottom: -6px;
   height: 3px;
   width: 0;
-  background: #000000;
+  background: #d58686;
   transition: width 0.3s ease-in-out;
 }
 
@@ -131,13 +131,13 @@
 .buttonJoin{
   cursor: pointer;
   font-size: 1.4rem;
-  background-color: white;
+  background-color: #f0f0f0;
   color: black;
   padding: 0.6rem 1.2rem;
   border: none;
   font-weight: 500;
   border-radius: 10px;
-  box-shadow: 0 6px #f0f0f0; /* shadow to create depth */
+  box-shadow: 0 6px rgb(0, 0, 0);/* shadow to create depth */
   transition: all 0.2s ease;
   position: relative;
 }

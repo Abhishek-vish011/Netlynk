@@ -9,12 +9,13 @@
   align-items: center;
   min-height: 80vh; 
   padding: 1rem;
+  background: url("https://t3.ftcdn.net/jpg/02/37/79/30/360_F_237793075_cIRaybagC5X0IdadiAEnVGhyFyestk4L.jpg");
 }
 
 /* Card */
 .mainContainer {
   color: black;
-  padding: 4rem 1.5rem;
+  padding: 3.6rem 1.5rem;
   max-width: 900px; 
   width: 100%;
   text-align: center;
@@ -126,6 +127,8 @@
   display: flex;
   justify-content: center; 
   align-items: center;  
+  background: linear-gradient(to bottom, #dee6e6, #ffffff);
+
 }
 .Wanner img {
   max-width: 100%; /* optional: keeps image responsive */
@@ -524,6 +527,13 @@
 
 /* Responsive */
 @media (max-width: 600px) {
+  .mainContainer{
+    padding: 1rem 1.5rem;
+  }
+
+  .logoSet{
+    margin-bottom: 2rem;
+  }
   .future h2 {
     font-size: 26px;
   }
